@@ -1,6 +1,6 @@
 function Portfolio(){
     return(
-        <section className="bg-slate-200">
+        <section className="w-full bg-slate-200 py-24 px-6 md:px-12">
         <h1 className="text-center mb-10 text-3xl md:text-4xl font-serif font-bold text-gray-900 tracking-wider uppercase mb-3">Our Portfolio</h1>
         <h2 className="text-center mb-10 text-xs md:text-sm font-mono text-gray-400 tracking-tight max-w-xl mx-auto">This is Photoshop's version of Lorem Ipsum. Proin gravida</h2>
         <div> 
