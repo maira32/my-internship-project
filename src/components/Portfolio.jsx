@@ -13,16 +13,16 @@ function Portfolio(){
         </ul>
         </div>
         <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-3 space-y-6">
-            <img src="/img1.png"></img>
-            <img src="/img2.png"></img>
-            <img src="/img3.png"></img>
-            <img src="/img4.png"></img>
-            <img src="/img5.png"></img>
-            <img src="/img6.png"></img>
-            <img src="/img7.png"></img>
-            <img src="/img8.png"></img>
-            <img src="/img9.png"></img>
-            <img src="/img10.png"></img>
+            <img src="/img1.png"/>
+            <img src="/img2.png"/>
+            <img src="/img3.png"/>
+            <img src="/img4.png"/>
+            <img src="/img5.png"/>
+            <img src="/img6.png"/>
+            <img src="/img7.png"/>
+            <img src="/img8.png"/>
+            <img src="/img9.png"/>
+            <img src="/img10.png"/>
 
         </div>
         </section>

@@ -4,7 +4,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
         
         <div className="flex items-center gap-3 cursor-pointer select-none">
-          <img src="/logo.png"></img>
+          <img src="/logo.png"/>
               <span className="font-black">ONE</span>PAGER
               <br/>
             <span className="text-[10px] font-mono tracking-tighter text-gray-400 -mt-1.5">
