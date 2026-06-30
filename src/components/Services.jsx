@@ -124,8 +124,8 @@ const servicesData = [
 function Services() {
   return (
     <section id="services" className="w-full bg-white py-24 px-6 md:px-12">
-    <h1 className="text-center mb-10 text-3xl md:text-4xl font-serif font-bold text-gray-900 tracking-wider uppercase mb-3">Our Services</h1>
-    <h2 className="text-center mb-10 text-xs md:text-sm font-mono text-gray-400 tracking-tight max-w-xl mx-auto">This is Photoshop's version of Lorem Ipsum. Proin gravida</h2>
+    <h1 className="text-center mb-10 text-3xl md:text-4xl font-['Courier_New',Courier,monospace] font-bold text-gray-900 tracking-wider uppercase mb-3">Our Services</h1>
+    <h2 className="text-center mb-10 text-xs md:text-sm font-['Courier_New',Courier,monospace] text-gray-400 tracking-tight max-w-xl mx-auto">This is Photoshop's version of Lorem Ipsum. Proin gravida</h2>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
           {servicesData.map((service, index) => (
@@ -136,11 +136,11 @@ function Services() {
 
 
               <div className="flex flex-col pt-1">
-                <h3 className="text-base font-serif font-bold tracking-widest text-gray-900 uppercase mb-2">
+                <h3 className="text-base font-['Courier_New',Courier,monospace] font-bold tracking-widest text-gray-900 uppercase mb-2">
                   {service.title}
                 </h3>
 
-                <p className="text-xs font-mono text-gray-400 leading-relaxed tracking-tight">
+                <p className="text-xs font-['Courier_New',Courier,monospace] text-gray-400 leading-relaxed tracking-tight">
                   {service.description}
                 </p>
               </div>

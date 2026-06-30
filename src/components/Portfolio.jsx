@@ -23,7 +23,7 @@ function Portfolio() {
     : portfolioItems.filter(item => item.category === activeCategory);
 
   return (
-    <section className="relative w-full py-20 min-h-screen select-none overflow-hidden bg-slate-100">
+    <section id="portfolio" className="relative w-full py-20 min-h-screen select-none overflow-hidden bg-slate-100">
       
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 pointer-events-none"
