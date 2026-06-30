@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 
 const Team = () => {
-  // 1. The Data
   const teamMembers = [
     { name: 'Owen Miller', role: 'developer', imageUrl: '/team1.png' },
     { name: 'Mike William', role: 'developer', imageUrl: '/team2.png' },
@@ -9,13 +8,10 @@ const Team = () => {
     { name: 'Faton Avdiu', role: 'developer', imageUrl: '/team4.png' },
   ];
 
-  // Make a long list so the carousel can scroll multiple times
   const carouselMembers = [...teamMembers, ...teamMembers, ...teamMembers, ...teamMembers];
 
-  // 2. The Reference to the scroll box
   const carouselRef = useRef(null);
 
-  // 3. Scroll Functions
   function scrollLeft() {
     const box = carouselRef.current;
     if (box) {
@@ -32,14 +28,11 @@ const Team = () => {
     }
   }
 
-  // 4. The UI
   return (
-    <section className="relative w-full bg-slate-600 py-16 flex items-center justify-center overflow-hidden font-mono">
+    <section id="team" className="relative w-full bg-slate-600 py-16 flex items-center justify-center overflow-hidden font-['Courier_New',Courier,monospace]">
       
-      {/* Background dark overlay */}
       <div className="absolute inset-0 bg-black opacity-60 z-0"></div>
 
-      {/* Left Button */}
       <button 
         onClick={scrollLeft}
         className="absolute left-0 z-30 bg-black opacity-80 text-white p-4 hover:opacity-100"
@@ -49,7 +42,6 @@ const Team = () => {
         </svg>
       </button>
 
-      {/* Right Button */}
       <button 
         onClick={scrollRight}
         className="absolute right-0 z-30 bg-black opacity-80 text-white p-4 hover:opacity-100"
@@ -59,10 +51,8 @@ const Team = () => {
         </svg>
       </button>
 
-      {/* Main Container */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-10">
         
-        {/* Title Area */}
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-white tracking-widest mb-2 uppercase">
             Meet the Team
@@ -72,7 +62,6 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Scrollable Carousel Box */}
         <div 
           ref={carouselRef}
           className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4"
@@ -82,18 +71,15 @@ const Team = () => {
             return (
               <div 
                 key={index} 
-                // THIS IS THE FIX! Exact math guarantees 4 fit perfectly on desktop.
                 className="flex-none w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] snap-start shadow-xl bg-gray-200"
               >
                 
-                {/* Profile Picture */}
                 <img 
                   src={member.imageUrl} 
                   alt={member.name} 
                   className="w-full aspect-square object-cover"
                 />
 
-                {/* Name and Role */}
                 <div className="bg-[#1c1f26] p-5">
                   <h3 className="text-white font-bold text-lg tracking-wide">
                     {member.name}
@@ -103,7 +89,6 @@ const Team = () => {
                   </p>
                 </div>
 
-                {/* Social Media Links */}
                 <div className="bg-[#3bc2b7] p-5 flex space-x-3">
                   <a href="#f" className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center text-white font-bold text-xs hover:bg-white hover:text-teal-500">
                     f

@@ -47,7 +47,7 @@ function Hero() {
   const active = slides[currentSlide];
 
   return (
-    <div className="relative min-h-screen w-full bg-[#1e232d] flex flex-col items-center justify-center overflow-hidden select-none">
+    <div id="home" className="relative min-h-screen w-full bg-[#1e232d] flex flex-col items-center justify-center overflow-hidden select-none">
       
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-100 pointer-events-none transition-all duration-500"
