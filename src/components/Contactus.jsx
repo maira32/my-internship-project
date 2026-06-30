@@ -114,7 +114,7 @@ const ContactSection = () => {
               <a 
                 key={i} 
                 href={`#home`} 
-                className="w-15 h-15 rounded-full border border-white flex items-center justify-center text-white font-bold text-sm hover:bg-white hover:text-[#2bb6b6] transition-all"
+                className="w-12 h-12 rounded-full border border-white flex items-center justify-center text-white font-bold text-sm hover:bg-white hover:text-[#2bb6b6] transition-all"
               >
                 {icon}
               </a>

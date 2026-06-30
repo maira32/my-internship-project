@@ -123,7 +123,7 @@ const servicesData = [
 
 function Services() {
   return (
-    <section id="services" className="w-full bg-white py-24 px-6 md:px-12">
+    <section id="services" className="w-full bg-white py-24 px-6 md:px-12 overflow-x-hidden">
     <h1 className="text-center mb-10 text-3xl md:text-4xl font-['Courier_New',Courier,monospace] font-bold text-gray-900 tracking-wider uppercase mb-3">Our Services</h1>
     <h2 className="text-center mb-10 text-xs md:text-sm font-['Courier_New',Courier,monospace] text-gray-400 tracking-tight max-w-xl mx-auto">This is Photoshop's version of Lorem Ipsum. Proin gravida</h2>
       <div className="max-w-7xl mx-auto">
@@ -148,7 +148,7 @@ function Services() {
           ))}
         </div>
       </div>
-       <img src="/services.png" className="block mx-auto "/>
+       <img src="/services.png" className="block mx-auto max-w-full h-auto "/>
     </section>
 
   );
