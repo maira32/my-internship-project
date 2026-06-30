@@ -4,6 +4,7 @@ import Portfolio from './components/Portfolio';
 import Services from './components/Services';
 import Team from './components/Team';
 import About from './components/About';
+import Blog from './components/Blog';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Services/>
       <Team />
       <About />
+      <Blog />
     </>
     
   )
