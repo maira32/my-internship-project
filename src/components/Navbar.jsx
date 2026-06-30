@@ -42,7 +42,7 @@ function Navbar() {
   };
 
   return (
-    <header className="w-full bg-white shadow-sm sticky top-0 z-50 select-none">
+    <header className="w-full bg-white shadow-sm sticky top-0 z-50 select-none overflow-x-hidden">
       <div className="w-full px-6 md:px-10 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-3 cursor-pointer">

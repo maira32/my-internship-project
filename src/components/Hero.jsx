@@ -64,7 +64,7 @@ function Hero() {
   </svg>
 </button>
 
-      <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center text-center px-12 sm:px-16 max-w-4xl mx-auto">
         
         <h1 className="font-['Courier_New',Courier,monospace] text-3xl sm:text-4xl md:text-5xl text-white tracking-wide uppercase">
           
