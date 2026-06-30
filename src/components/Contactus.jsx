@@ -109,7 +109,7 @@ const ContactSection = () => {
             © 2014 OnePager, All Rights Reserved
           </p>
 
-          <div className="flex space-x-5">
+          <div className="flex flex-wrap justify-center gap-3">
             {['f', 't', 'rss', 'g+', 'in', 'p'].map((icon, i) => (
               <a 
                 key={i} 
